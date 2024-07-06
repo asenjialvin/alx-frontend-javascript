@@ -1,18 +1,15 @@
 /**
  * Retrieves a map of grocery names and their quantity.
- * @author Nason Mamu <https://github.com/nasonmamu>
+ * @author Bezaleel Olakunori <https://github.com/B3zaleel>
  * @returns {Map<string, Number>}
  */
-// 9-groceries_list.js
-
-function groceriesList() {
-  const groceries = new Map();
-  groceries.set('Apples', 10);
-  groceries.set('Tomatoes', 10);
-  groceries.set('Pasta', 1);
-  groceries.set('Rice', 1);
-  groceries.set('Banana', 5);
-  
-  return groceries;
+export default function groceriesList() {
+  const values = [
+    ['Apples', 10],
+    ['Tomatoes', 10],
+    ['Pasta', 1],
+    ['Rice', 1],
+    ['Banana', 5],
+  ];
+  return new Map(values);
 }
-export default groceriesList;

@@ -3,15 +3,17 @@
  * @param {{
  *   id: Number,
  *   firstName: String,
- *   Location: String
+ *   location: String
  * }[]} students - The list of students.
- * @author Nason Mamu <https://github.com/nasonmamu>
+ * @author Bezaleel Olakunori <https://github.com/B3zaleel>
  * @returns {Number}
  */
-// 3-get_ids_sum.js
-
-function getStudentIdsSum(students) {
-  return students.reduce((sum, student) => sum + student.id, 0);
+export default function getStudentIdsSum(students) {
+  if (students instanceof Array) {
+    return students.reduce(
+      (prevStudent, curStudent) => prevStudent.id || prevStudent + curStudent.id,
+      0,
+    );
+  }
+  return 0;
 }
-
-export default getStudentIdsSum;

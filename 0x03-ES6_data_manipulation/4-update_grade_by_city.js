@@ -3,14 +3,14 @@
  * @param {{
  *   id: Number,
  *   firstName: String,
- *   Location: String
+ *   location: String
  * }[]} students - The list of students.
  * @param {*} city - The city of students.
  * @param {{
  *   studentId: Number,
  *   grade: Number,
  * }[]} newGrades - The new grades to be given to a student.
- * @author Nason Mamu <https://github.com/nasonmamu>
+ * @author Bezaleel Olakunori <https://github.com/B3zaleel>
  * @returns {{id: Number, firstName: String, location: String}[]}
  */
 export default function updateStudentGradeByCity(students, city, newGrades) {
